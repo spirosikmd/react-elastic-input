@@ -1,0 +1,15 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ElasticInput renders 1`] = `
+<ElasticInput
+  onChange={[Function]}
+  placeholder="placeholder"
+  type="text"
+>
+  <input
+    onChange={[Function]}
+    placeholder="placeholder"
+    type="text"
+  />
+</ElasticInput>
+`;
