@@ -14,7 +14,7 @@ You're going to need [`git`](https://git-scm.com/) to get the project, and [`nod
 3.  Run `yarn test` for testing
 4.  Run `yarn lint` for linting
 5.  Run `yarn start` to compile
-6.  Run `yarn docs` to test the component using an example project
+6.  Run `yarn docz:dev` to test the component using the [docs](http://localhost:3000/docs-app)
 7.  Create a branch for your PR
 
 ## Committing and Pushing changes
