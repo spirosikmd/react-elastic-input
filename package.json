@@ -9,9 +9,10 @@
     "build": "rollup -c",
     "start": "rollup -c -w",
     "test": "jest",
-    "docs": "webpack-dev-server",
     "lint": "eslint .",
-    "semantic-release": "semantic-release"
+    "semantic-release": "semantic-release",
+    "docz:dev": "docz dev",
+    "docz:build": "docz build"
   },
   "keywords": [
     "react",
@@ -37,8 +38,9 @@
     "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.7.0",
     "babel-preset-react": "^6.24.1",
-    "copy-webpack-plugin": "^4.5.2",
     "css-loader": "^1.0.0",
+    "docz": "^0.9.3",
+    "docz-plugin-babel6": "^0.9.3",
     "enzyme": "^3.3.0",
     "enzyme-adapter-react-16": "^1.1.1",
     "enzyme-to-json": "^3.3.4",
@@ -46,7 +48,6 @@
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-prettier": "^2.6.2",
     "eslint-plugin-react": "^7.10.0",
-    "html-webpack-plugin": "^3.2.0",
     "jest": "^23.4.2",
     "prettier": "^1.14.0",
     "react": "^16.4.1",
@@ -57,12 +58,9 @@
     "rollup-plugin-commonjs": "^9.1.3",
     "rollup-plugin-node-resolve": "^3.3.0",
     "rollup-plugin-uglify": "^4.0.0",
+    "semantic-release": "^15.9.3",
     "style-loader": "^0.21.0",
-    "uglify-es": "^3.3.9",
-    "webpack": "^4.16.2",
-    "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5",
-    "semantic-release": "^15.9.3"
+    "uglify-es": "^3.3.9"
   },
   "peerDependencies": {
     "react": "^0.14 || >=15",
