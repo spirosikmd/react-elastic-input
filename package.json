@@ -1,6 +1,6 @@
 {
   "name": "react-elastic-input",
-  "version": "1.0.0",
+  "version": "0.0.0-development",
   "description": "A React component to render input elements that grow as their content grows",
   "main": "dist/react-elastic-input.cjs.js",
   "module": "dist/react-elastic-input.esm.js",
@@ -10,11 +10,12 @@
     "start": "rollup -c -w",
     "test": "jest",
     "docs": "webpack-dev-server",
-    "lint": "eslint ."
+    "lint": "eslint .",
+    "semantic-release": "semantic-release"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/spirosikmd/react-elastic-input.git"
+    "url": "https://github.com/spirosikmd/react-elastic-input.git"
   },
   "author": "Spyros Ioakeimidis <spyrosikmd@gmail.com>",
   "license": "MIT",
@@ -55,7 +56,8 @@
     "uglify-es": "^3.3.9",
     "webpack": "^4.16.2",
     "webpack-cli": "^3.1.0",
-    "webpack-dev-server": "^3.1.5"
+    "webpack-dev-server": "^3.1.5",
+    "semantic-release": "^15.9.3"
   },
   "peerDependencies": {
     "react": "^0.14 || >=15",

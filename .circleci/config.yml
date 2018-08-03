@@ -11,8 +11,8 @@ jobs:
 
       - restore_cache:
           keys:
-          - v1-dependencies-{{ checksum "yarn.lock" }}
-          - v1-dependencies-
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
 
       - run: yarn install
 
@@ -23,3 +23,29 @@ jobs:
 
       - run: yarn lint
       - run: yarn test --ci
+
+  release:
+    docker:
+      - image: circleci/node:8
+
+    working_directory: ~/repo
+
+    steps:
+      - checkout
+
+      - restore_cache:
+          keys:
+            - v1-dependencies-{{ checksum "yarn.lock" }}
+            - v1-dependencies-
+
+      - run: yarn semantic-release || true
+
+workflows:
+  version: 2
+  build_integrate_release:
+    jobs:
+      - build
+      - release:
+          filters:
+            branches:
+              only: master
